@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.bielecki'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation group: 'com.yahoofinance-api', name: 'YahooFinanceAPI', version: '3.15.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
